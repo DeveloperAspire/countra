@@ -1,0 +1,25 @@
+.container {
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+   box-shadow: 0 0 6px #d3d3d3;
+
+}
+img {
+  width: 250px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.details {
+  padding: 1rem 1rem 2rem 1rem;
+}
+.details h4{
+      margin-bottom: 0.7rem;
+}
+.details p{
+      margin-bottom: 0.3rem;
+}
+.details p span{
+      font-weight: 600;
+}

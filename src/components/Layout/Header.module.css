@@ -1,0 +1,27 @@
+.header {
+      padding: 1.2rem 4rem;
+      box-shadow: 0 4px 18px -12px hsl(0, 0%, 52%);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+}
+.header .mode {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+      border: none;
+      font-size: 16px;
+      font-family: inherit;
+      cursor: pointer;
+}
+.header .mode i {
+      margin-right: 0.3rem;
+}
+.header .mode p{
+      font-weight: 600;
+}
+.header h1 {
+      font-size: 1.3rem;
+}

@@ -1,0 +1,75 @@
+/* SERACH INPUT STYLES */
+form{
+    position: relative;
+
+}
+.container {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 6px #d3d3d3;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  color: hsl(0, 0%, 52%);
+  width: 150%;
+}
+
+.container input {
+  border: none;
+  font-family: inherit;
+  font-weight: 600;
+  color: hsl(0, 0%, 52%);
+  font-size: 18px;
+  margin-left: 1rem;
+  width: 100%;
+}
+.container input:focus {
+  outline: none;
+}
+.container input::placeholder{
+  color: hsl(0, 0%, 52%);
+  font-weight: 600;
+}
+
+/* FILTER INPUT STYLES */
+
+.filter {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 6px #d3d3d3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  color: #08030F;
+  cursor: pointer;
+}
+.filter p{
+       font-weight: 600;
+       font-size: 18px;
+       margin-right: 2rem;
+}
+.dropdown{
+  position: absolute;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0 0 6px #d3d3d3;
+  padding: 1rem 1.5rem;
+  color: #08030F;
+  cursor: pointer;
+  width:100%;
+  margin-top: .5rem;
+  display: none;
+}
+
+.show{
+  display: block;
+}
+
+.dropdown ul{
+  list-style: none;
+  font-weight: 600;
+}
+.dropdown ul li{
+  margin-top: .4rem;
+}

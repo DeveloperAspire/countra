@@ -9,3 +9,7 @@ body {
    font-family: 'Nunito Sans', sans-serif;
    background-color: #FAFAFA;
 }
+.center {
+  margin-top:5rem;
+  text-align: center;
+}

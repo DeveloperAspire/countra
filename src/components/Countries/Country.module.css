@@ -3,10 +3,18 @@
   background-color: white;
   border-radius: 5px;
    box-shadow: 0 0 6px #d3d3d3;
+   height: 100%;
 
+}
+
+a {
+      display: block;
+      text-decoration: none;
+      color: hsl(200, 15%, 8%);
 }
 img {
   width: 250px;
+  height: auto;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
@@ -14,10 +22,10 @@ img {
 .details {
   padding: 1rem 1rem 2rem 1rem;
 }
-.details h4{
+.details  h4{
       margin-bottom: 0.7rem;
 }
-.details p{
+.details p {
       margin-bottom: 0.3rem;
 }
 .details p span{

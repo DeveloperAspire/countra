@@ -4,5 +4,6 @@
   margin-top: 4rem;
   justify-items: stretch;
   column-gap: 3.1rem;
+  row-gap: 4rem;
   font-family: inherit;
 }

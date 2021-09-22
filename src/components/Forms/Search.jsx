@@ -4,7 +4,7 @@ const Search = () => {
   return (
     <form>
       <div className={classes.container}>
-        <i class="fas fa-search"></i>
+        <i className="fas fa-search"></i>
         <input type="text" placeholder="Search for a country..." />
       </div>
     </form>

@@ -1,25 +1,26 @@
 import classes from "./Country.module.css";
+import { Link } from "react-router-dom";
 
-const Country = () => {
+const Country = ({ name, flag, capital, region, population , code}) => {
   return (
-    <div className={classes.container}>
-      <img
-        src="https://restcountries.eu/data/afg.svg"
-        alt="A flag of a country"
-      />
-      <div className={classes.details}>
-        <h4>Germany</h4>
-        <p>
-          <span>Population</span>: 127,000
-        </p>
-        <p>
-          <span>Region</span>: Africa
-        </p>
-        <p>
-          <span>Capital</span>: Abuja
-        </p>
+    <Link to={`/details/${code}`}>
+      <div className={classes.container}>
+        <img src={flag} alt="A flag of a country" />
+
+        <div className={classes.details}>
+          <h4>{name}</h4>
+          <p>
+            <span>Population</span>: {population}
+          </p>
+          <p>
+            <span>Region</span>: {region}
+          </p>
+          <p>
+            <span>Capital</span>: {capital}
+          </p>
+        </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

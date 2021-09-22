@@ -2,18 +2,21 @@ import Country from "./Country";
 import classes from "./Countries.module.css";
 import axios from "axios";
 import LoadingSpinner from '../UI/LoadingSpinner'
-import { useEffect, useState } from "react";
+import { useEffect} from "react";
+import {useSelector, useDispatch} from 'react-redux'
+import { updateCountries } from "../../store/country-slice";
 
 const Countries = () => {
-  const [countries, setCountries] = useState(null);
+  const countries = useSelector(state => state.countrySlice.countries)
+  const dispatch = useDispatch()
 
   useEffect(() => {
     axios.get("https://restcountries.eu/rest/v2/all").then((res) => {
-      setCountries(res.data);
+      dispatch(updateCountries(res.data))
     });
-  }, []);
+  }, [dispatch]);
 
-  if (!countries) {
+  if (countries.length === 0) {
     return <div className="center"><LoadingSpinner/></div>;
   }
 

@@ -11,7 +11,7 @@ const Countries = () => {
   const dispatch = useDispatch()
 
   useEffect(() => {
-    axios.get("https://restcountries.eu/rest/v2/all").then((res) => {
+    axios.get("https://restcountries.com/v2/all").then((res) => {
       dispatch(updateCountries(res.data))
     });
   }, [dispatch]);
@@ -26,7 +26,7 @@ const Countries = () => {
         <Country
           name={country.name}
           key={country.alpha2Code}
-          flag={country.flag}
+          flag={country.flags[1]}
           capital={country.capital}
           region={country.region}
           population={country.population}

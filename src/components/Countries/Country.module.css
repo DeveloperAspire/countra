@@ -2,15 +2,23 @@
   width: 100%;
   background-color: white;
   border-radius: 5px;
-   box-shadow: 0 0 6px #d3d3d3;
-   height: 100%;
-
+  box-shadow: 0 0 6px #d3d3d3;
+  height: 100%;
+  /* transition: all .1s ease-out; */
+}
+.dark {
+  background-color: hsl(209, 23%, 22%);
+  box-shadow: 0 4px 18px -12px hsl(207, 26%, 17%)
+ 
 }
 
-a {
-      display: block;
-      text-decoration: none;
-      color: hsl(200, 15%, 8%);
+.link {
+  display: block;
+  text-decoration: none;
+  color: hsl(200, 15%, 8%);
+}
+.darklink{
+      color:white;
 }
 img {
   width: 250px;
@@ -22,12 +30,12 @@ img {
 .details {
   padding: 1rem 1rem 2rem 1rem;
 }
-.details  h4{
-      margin-bottom: 0.7rem;
+.details h4 {
+  margin-bottom: 0.7rem;
 }
 .details p {
-      margin-bottom: 0.3rem;
+  margin-bottom: 0.3rem;
 }
-.details p span{
-      font-weight: 600;
+.details p span {
+  font-weight: 600;
 }

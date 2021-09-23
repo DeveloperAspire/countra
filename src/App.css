@@ -5,9 +5,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
+.body {
    font-family: 'Nunito Sans', sans-serif;
    background-color: #FAFAFA;
+}
+.dark{
+  background-color: hsl(207, 26%, 17%);
 }
 .center {
   margin-top:5rem;

@@ -12,6 +12,11 @@ form{
   padding: 1rem;
   color: hsl(0, 0%, 52%);
   width: 150%;
+  /* transition: all 0.2s ease-in; */
+}
+.dark{
+  background-color:  hsl(209, 23%, 22%);
+  box-shadow: 0 4px 18px -12px hsl(207, 26%, 17%);
 }
 
 .container input {
@@ -19,9 +24,17 @@ form{
   font-family: inherit;
   font-weight: 600;
   color: hsl(0, 0%, 52%);
-  font-size: 18px;
+  font-size: 16px;
   margin-left: 1rem;
   width: 100%;
+  background-color: transparent;
+}
+.container.dark input{
+  color:white;
+  background-color: transparent;
+}
+.container.dark i {
+  color:white;
 }
 .container input:focus {
   outline: none;
@@ -29,6 +42,9 @@ form{
 .container input::placeholder{
   color: hsl(0, 0%, 52%);
   font-weight: 600;
+}
+.container.dark input::placeholder{
+  color: white;
 }
 
 /* FILTER INPUT STYLES */
@@ -43,11 +59,22 @@ form{
   padding: 1rem;
   color: #08030F;
   cursor: pointer;
+  /* transition: all 0.1s ease-in; */
+}
+.dark{
+  background-color:  hsl(209, 23%, 22%);
+  box-shadow: 0 4px 18px -12px hsl(207, 26%, 17%);
 }
 .filter p{
        font-weight: 600;
-       font-size: 18px;
+       font-size: 16px;
        margin-right: 2rem;
+}
+.filter.dark p{
+  color:white
+}
+.filter.dark i{
+  color: white;
 }
 .dropdown{
   position: absolute;
@@ -62,6 +89,13 @@ form{
   display: none;
 }
 
+.darkdown{
+ background-color: hsl(209, 23%, 22%);
+  box-shadow: 0 4px 18px -12px hsl(207, 26%, 17%);
+  color:white;
+
+}
+
 .show{
   display: block;
 }
@@ -71,5 +105,5 @@ form{
   font-weight: 600;
 }
 .dropdown ul li{
-  margin-top: .4rem;
+  margin-top: .5rem;
 }

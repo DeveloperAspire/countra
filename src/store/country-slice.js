@@ -1,7 +1,8 @@
 import {createSlice} from '@reduxjs/toolkit'
 
 const initialState = {
-      countries : []
+      countries : [],
+      darkMode : false
 }
 const countries = createSlice({
       name: "countries",
@@ -10,10 +11,13 @@ const countries = createSlice({
     updateCountries(state, action){
           state.countries = action.payload
 
+    },
+    updateMode(state){
+          state.darkMode = !state.darkMode
     }
       }
 })
 
-export const {updateCountries} = countries.actions
+export const {updateCountries, updateMode} = countries.actions
 
 export default countries.reducer

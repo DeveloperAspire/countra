@@ -48,7 +48,7 @@ const CountryDetails = ({
               </p>
             </div>
 
-            <div>
+            <div className={classes.second}>
               <p>
                 <span>Top Level Domain</span>: {domain[0]}
               </p>

@@ -14,8 +14,8 @@
 .details {
   margin-top: 2rem;
 }
-.dark{
-  color:white;
+.dark {
+  color: white;
 }
 .details h1 {
   margin-bottom: 1.5rem;
@@ -26,8 +26,33 @@
 }
 .grid p {
   font-size: 18px;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 .grid p span {
   font-weight: 600;
+}
+
+@media (max-width: 500px) {
+  .main {
+    padding: 3rem 2rem;
+  }
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .grid {
+  grid-template-columns: 1fr;
+}
+.second{
+  margin-top: 2rem;
+}
+.container img {
+  width: 300px;
+}
+.details h1 {
+ font-size: 1rem;
+}
+.grid p {
+  font-size: 16px;
+  margin-bottom: 0.5rem;
+}
 }

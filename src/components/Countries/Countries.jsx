@@ -29,7 +29,7 @@ const Countries = () => {
 
     fetchCountries()
    
-  }, [dispatch]);
+  }, [dispatch,history]);
 
   if (loading || countries.length === 0) {
     console.log('loading...')

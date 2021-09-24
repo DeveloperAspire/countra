@@ -2,3 +2,10 @@
       padding:3rem 4rem;
       margin-top: .2rem;
 }
+
+@media (max-width: 570px) {
+      .container{
+            padding: 3rem 2rem
+      }
+      
+}

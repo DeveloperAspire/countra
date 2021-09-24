@@ -8,8 +8,7 @@
 }
 .dark {
   background-color: hsl(209, 23%, 22%);
-  box-shadow: 0 4px 18px -12px hsl(207, 26%, 17%)
- 
+  box-shadow: 0 4px 18px -12px hsl(207, 26%, 17%);
 }
 
 .link {
@@ -17,8 +16,8 @@
   text-decoration: none;
   color: hsl(200, 15%, 8%);
 }
-.darklink{
-      color:white;
+.darklink {
+  color: white;
 }
 .container img {
   width: 250px;
@@ -38,4 +37,10 @@
 }
 .details p span {
   font-weight: 600;
+}
+
+@media (max-width: 570px) {
+  .container img {
+    width: 100%;
+  }
 }

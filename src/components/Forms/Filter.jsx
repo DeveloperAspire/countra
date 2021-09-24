@@ -62,8 +62,8 @@ const Filter = () => {
     : `${classes.dropdown}`;
 
   return (
-    <form onClick={showDropDown}>
-      <div className={filterClass}>
+    <form>
+      <div className={filterClass} onClick={showDropDown}>
         <p>Filter by region</p>
         <i className="fas fa-angle-down"></i>
       </div>

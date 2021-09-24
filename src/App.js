@@ -2,7 +2,7 @@ import { Switch, Route, Redirect } from "react-router";
 import Header from "../src/components/Layout/Header";
 import Home from "../src/pages/Home";
 import Details from '../src/pages/Details'
-import NotFound from "./pages/NotFound";
+import NotFoundPage from "./pages/NotFoundPage";
 import {  useSelector } from "react-redux";
 import "./App.css";
 
@@ -25,7 +25,7 @@ const App = () => {
           <Details />
         </Route>
         <Route path="*">
-          <NotFound />
+          <NotFoundPage />
         </Route>
       </Switch>
     </div>

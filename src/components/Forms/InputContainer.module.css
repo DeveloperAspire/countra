@@ -3,3 +3,9 @@
   justify-content: space-between;
   align-items: center;
 }
+
+@media (max-width: 570px) {
+    .container {
+      flex-direction: column;
+    }
+}

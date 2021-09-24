@@ -15,6 +15,7 @@ body{
 }
 .darkbody{
   background-color: hsl(207, 26%, 17%);
+  color:white;
 }
 .center {
   margin-top:5rem;

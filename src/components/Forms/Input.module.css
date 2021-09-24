@@ -107,3 +107,31 @@ form{
 .dropdown ul li{
   margin-top: .5rem;
 }
+
+
+@media (max-width: 570px) {
+  form{
+    width:100%;
+  }
+  .container {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.filter {
+ width:60%;
+}
+.dropdown{
+ 
+  width:60%;
+}
+}
+
+@media (max-width: 360) {
+  .filter {
+ width:100%;
+}
+.dropdown{
+ 
+  width:100%;
+}
+}

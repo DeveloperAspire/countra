@@ -7,3 +7,11 @@
   row-gap: 4rem;
   font-family: inherit;
 }
+
+@media (max-width: 570px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    column-gap: 2rem;
+  }
+  
+}

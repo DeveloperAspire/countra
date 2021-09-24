@@ -1,22 +1,38 @@
 import Country from "./Country";
 import classes from "./Countries.module.css";
-import axios from "axios";
 import LoadingSpinner from '../UI/LoadingSpinner'
 import { useEffect} from "react";
-import {useSelector, useDispatch} from 'react-redux'
-import { updateCountries } from "../../store/country-slice";
+import {useSelector} from 'react-redux'
+import { useHistory } from "react-router";
+// import useHttp from "../../Hooks/useHttp";
+import { useDispatch } from "react-redux";
+import axios from 'axios'
+import { updateCountries, updateLoading } from "../../store/country-slice"
 
 const Countries = () => {
   const countries = useSelector(state => state.countrySlice.countries)
+  const loading = useSelector((state) => state.countrySlice.isLoading);
   const dispatch = useDispatch()
+  const history = useHistory()
+  
+  
+
 
   useEffect(() => {
-    axios.get("https://restcountries.com/v2/all").then((res) => {
-      dispatch(updateCountries(res.data))
-    });
-  }, [dispatch]);
+    const fetchCountries = async ()=> {
+      history.push('/home')
+      dispatch(updateLoading(true))
+      const response = await axios.get("https://restcountries.com/v2/all");
+      dispatch(updateCountries(response.data))
+      dispatch(updateLoading(false))
+    }
 
-  if (countries.length === 0) {
+    fetchCountries()
+   
+  }, [dispatch, history]);
+
+  if (loading || countries.length === 0) {
+    console.log('loading...')
     return <div className="center"><LoadingSpinner/></div>;
   }
 
@@ -28,7 +44,7 @@ const Countries = () => {
           key={country.alpha2Code}
           flag={country.flags[1]}
           capital={country.capital}
-          region={country.region}
+          region={country.continent}
           population={country.population}
           code={country.alpha2Code}
         />

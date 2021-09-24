@@ -15,7 +15,7 @@ const Header = ()=> {
           <h1>Where in the world?</h1>
           <button className={classes.mode} onClick={changeModeHandler}>
             {!darkMode && <i className="far fa-moon"></i>}
-            {darkMode && <i class="fas fa-moon"></i>}
+            {darkMode && <i className="fas fa-moon"></i>}
             {!darkMode && <p>Dark Mode</p>}
             {darkMode && <p>Light Mode</p>}
           </button>

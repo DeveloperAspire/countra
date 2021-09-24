@@ -1,4 +1,5 @@
 import { Switch, Route, Redirect } from "react-router";
+import Header from "../src/components/Layout/Header";
 import Home from "../src/pages/Home";
 import Details from '../src/pages/Details'
 import NotFound from "./pages/NotFound";
@@ -8,9 +9,11 @@ import "./App.css";
 const App = () => {
   const darkMode = useSelector((state) => state.countrySlice.darkMode);
 
-  const bodyColor= darkMode ? 'body dark' : 'body'
+
+  const bodyColor= darkMode ? 'body darkbody' : 'body'
   return (
     <div className={bodyColor}>
+      <Header />
       <Switch>
         <Route path="/" exact>
           <Redirect to="/home" />

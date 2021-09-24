@@ -2,7 +2,8 @@ import {createSlice} from '@reduxjs/toolkit'
 
 const initialState = {
       countries : [],
-      darkMode : false
+      darkMode : false,
+      isLoading:false
 }
 const countries = createSlice({
       name: "countries",
@@ -14,10 +15,14 @@ const countries = createSlice({
     },
     updateMode(state){
           state.darkMode = !state.darkMode
+    },
+    updateLoading(state, action){
+          state.isLoading= action.payload
     }
+
       }
 })
 
-export const {updateCountries, updateMode} = countries.actions
+export const {updateCountries, updateMode, updateLoading} = countries.actions
 
 export default countries.reducer

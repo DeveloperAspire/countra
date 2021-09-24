@@ -1,0 +1,13 @@
+.button{
+      background-color: white;
+      box-shadow: 0 0 6px #d3d3d3;
+      padding:0.5rem;
+      border: none;
+      margin-bottom: 3rem;
+      width:10%;
+      border-radius: 2px;
+      font-family: inherit;
+}
+.button i{
+      margin-right: 1rem;
+}

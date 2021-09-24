@@ -1,5 +1,7 @@
-const Details =()=> {
-      return <h1>Hello I am the details page</h1>
-}
+import CountryDetails from "../components/Countries/CountryDetails";
 
-export default Details
+const Details = () => {
+  return <CountryDetails />;
+};
+
+export default Details;

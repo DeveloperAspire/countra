@@ -1,0 +1,30 @@
+.main {
+  padding: 3rem 4rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  color: hsl(200, 15%, 8%);
+}
+.container img {
+  width: 400px;
+}
+.details {
+  margin-top: 2rem;
+}
+.details h1 {
+  margin-bottom: 1.5rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.grid p {
+  font-size: 18px;
+  margin-bottom: 0.5rem;
+}
+.grid p span {
+  font-weight: 600;
+}

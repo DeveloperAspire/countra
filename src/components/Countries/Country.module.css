@@ -20,7 +20,7 @@
 .darklink{
       color:white;
 }
-img {
+.container img {
   width: 250px;
   height: auto;
   border-top-left-radius: 5px;

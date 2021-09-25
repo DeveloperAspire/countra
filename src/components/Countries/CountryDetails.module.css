@@ -36,13 +36,17 @@
   box-shadow: 0 0 6px #d3d3d3;
   padding: 0.5rem;
   border: none;
-  margin-bottom: 3rem;
-  width: 10%;
   border-radius: 2px;
   font-family: inherit;
   text-decoration: none;
   color: hsl(200, 15%, 8%);
   margin-left: 1rem;
+  display: inline-block;
+}
+.linkgrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 1rem;
 }
 .details.dark a {
   background-color: hsl(209, 23%, 22%);

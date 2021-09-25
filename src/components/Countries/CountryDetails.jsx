@@ -2,6 +2,10 @@ import classes from "./CountryDetails.module.css";
 import BackButton from "../UI/BackButton";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { useParams } from "react-router";
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { updateLoading } from "../../store/country-slice";
 
 const CountryDetails = ({
   name,
@@ -16,14 +20,21 @@ const CountryDetails = ({
   currencies,
   borders
 }) => {
+  const params = useParams()
+  const dispatch = useDispatch()
 
+  useEffect(()=> {
+    console.log('hello')
+    dispatch(updateLoading(true))
+  },[params.countryCode, dispatch])
  
  const darkMode = useSelector(state => state.countrySlice.darkMode)
       const allLanguages = languages.map(lang => lang.name)
 
       const detailsClass = darkMode ? `${classes.details} ${classes.dark}` : `${classes.details}`
+      const overFlow = borders.length > 4
+      const linkClass = overFlow ? `${classes.linkgrid}` : ''
 
-      console.log(borders)
   return (
     <main className={classes.main}>
       <BackButton />
@@ -69,7 +80,7 @@ const CountryDetails = ({
             <p className={classes.p}>
               Borders:
               {borders.map((bor) => (
-                <Link to={`/details/${bor}`}>{bor}</Link>
+                <Link className={linkClass} key={bor} to={`/details/${bor}`}>{bor}</Link>
               ))}
             </p>
           

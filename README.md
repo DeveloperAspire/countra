@@ -8,38 +8,38 @@ Countra also provides theme switching from dark to light theme and vice-versa.
 
 Countra is responsive on all devices from mobile to tablet and desktop. 
 
-## Bonus: There is a beautiful 404 page incase you land on apage that doesn't exist in this application
-
 Countra is built with React, Redux-Toolkit for State Management, React-Router for Client style routing and also CSS for styling.
+
+#### Bonus: There is a beautiful 404 page incase you land on apage that doesn't exist in this application
 
 ## Check out the view below
 
- ** Home Page **
+ ### Home Page 
 
  ![](src/images/home-light.png)
 
- ** Details Page to view more about a country **
+ ### Details Page to view more about a country 
 
  ![](src/images/details-white.png)
 
- ** 404 page not found/ Error page **
+ ### 404 page not found/ Error page 
 
  ![](src/images/404-light.png)
 
  ## Dark mode
 
-  ** Home Page **
+  ### Home Page
 
  ![](src/images/home-dark.png)
 
- ** Details Page to view more about a country **
+ ### Details Page to view more about a country 
 
  ![](src/images/details-dark.png)
 
- ** 404 page not found/ Error page **
+ ### 404 page not found/ Error page 
 
  ![](src/images/404-dark.png)
- 
+
 
 
 

@@ -1,4 +1,47 @@
-# Getting Started with Create React App
+# Contra
+
+Countra is a web application built for users to be able to search all the different countries in the world, view details which includes, languages, food, currencies, population e.t.c and also countries they share borders with.
+
+Countra also provides a filter feature in which users can filter countries by region/continent and users can also search countries.
+
+Countra also provides theme switching from dark to light theme and vice-versa.
+
+Countra is responsive on all devices from mobile to tablet and desktop. 
+
+## Bonus: There is a beautiful 404 page incase you land on apage that doesn't exist in this application
+
+Countra is built with React, Redux-Toolkit for State Management, React-Router for Client style routing and also CSS for styling.
+
+## Check out the view below
+
+ ** Home Page **
+
+ ![](src/images/home-light.png)
+
+ ** Details Page to view more about a country **
+
+ ![](src/images/details-white.png)
+
+ ** 404 page not found/ Error page **
+
+ ![](src/images/404-light.png)
+
+ ## Dark mode
+
+  ** Home Page **
+
+ ![](src/images/home-dark.png)
+
+ ** Details Page to view more about a country **
+
+ ![](src/images/details-dark.png)
+
+ ** 404 page not found/ Error page **
+
+ ![](src/images/404-dark.png)
+ 
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

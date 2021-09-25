@@ -44,3 +44,9 @@
     width: 100%;
   }
 }
+
+@media (max-width:1024px) {
+ .container img {
+    width: 100%;
+  }
+}

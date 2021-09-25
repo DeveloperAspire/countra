@@ -135,3 +135,15 @@ form{
   width:100%;
 }
 }
+
+@media (width:1024px) {
+  .filter {
+ width:100%;
+}
+}
+
+@media (width:768px) {
+   .filter {
+ width:100%;
+}
+}

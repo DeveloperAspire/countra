@@ -15,6 +15,13 @@
   }
   
 }
+
+@media (width:768px) {
+  .wrapper {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+  }
+}
 @media (width:1024px) {
   .wrapper {
     grid-template-columns: 1fr 1fr;

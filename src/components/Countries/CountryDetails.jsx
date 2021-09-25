@@ -34,6 +34,7 @@ const CountryDetails = ({
       const detailsClass = darkMode ? `${classes.details} ${classes.dark}` : `${classes.details}`
       const overFlow = borders.length > 4
       const linkClass = overFlow ? `${classes.linkgrid}` : ''
+      const formatedPopulation = population.toLocaleString("en");
 
   return (
     <main className={classes.main}>
@@ -51,7 +52,7 @@ const CountryDetails = ({
                 <span>Native Name</span>: {nativeName}
               </p>
               <p>
-                <span>Population</span>: {population}
+                <span>Population</span>: {formatedPopulation}
               </p>
               <p>
                 <span>Region</span>: {continent}

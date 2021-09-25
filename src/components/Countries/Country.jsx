@@ -4,6 +4,7 @@ import { useSelector } from "react-redux";
 
 const Country = ({ name, flag, capital, region, population , code}) => {
   const darkMode = useSelector((state) => state.countrySlice.darkMode);
+  const formatedPopulation = population.toLocaleString('en')
 
   const containerClass = darkMode
     ? `${classes.container} ${classes.dark}`
@@ -17,7 +18,7 @@ const Country = ({ name, flag, capital, region, population , code}) => {
         <div className={classes.details}>
           <h4>{name}</h4>
           <p>
-            <span>Population</span>: {population}
+            <span>Population</span>: {formatedPopulation}
           </p>
           <p>
             <span>Region</span>: {region}

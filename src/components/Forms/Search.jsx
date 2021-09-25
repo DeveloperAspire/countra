@@ -15,26 +15,23 @@ const Search = () => {
   const searchCountryHandler = async (e) => {
     e.preventDefault();
 
-    if (isValid) {
-      history.push(`/home?search=${enteredValue}`);
-      dispatch(updateLoading(true));
-      const response = await axios.get(
-        `https://restcountries.com/v2/name/${enteredValue}`
-      );
-      dispatch(updateCountries(response.data));
-      dispatch(updateLoading(false));
-      setEnteredValue("");
-    } else {
+    if(enteredValue.trim() !== ""){
+       history.push(`/home?search=${enteredValue}`);
+       dispatch(updateLoading(true));
+       const response = await axios.get(
+         `https://restcountries.com/v2/name/${enteredValue}`
+       );
+       dispatch(updateCountries(response.data));
+       dispatch(updateLoading(false));
+       setEnteredValue("");
+    }
+    else {
       history.push("*");
     }
   };
 
   const enteredInputHandler = (e) => {
-    if (e.target.value.trim() === "") {
-      setIsValid(false);
-    }
     setEnteredValue(e.target.value);
-    setIsValid(true);
   };
 
   const containerClass = darkMode

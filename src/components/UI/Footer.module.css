@@ -1,0 +1,17 @@
+.footer {
+  text-align: center;
+  padding: 2rem;
+  color: hsl(200, 15%, 8%);
+}
+
+.footer p {
+  font-weight: 600;
+}
+.footer p a {
+  color: inherit;
+  text-decoration: none;
+  margin-left: 0.5rem;
+}
+.dark {
+  color: white;
+}

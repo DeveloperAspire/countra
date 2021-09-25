@@ -1,5 +1,6 @@
 import { Switch, Route, Redirect } from "react-router";
 import Header from "../src/components/Layout/Header";
+import Footer from "./components/UI/Footer";
 import Home from "../src/pages/Home";
 import Details from '../src/pages/Details'
 import NotFoundPage from "./pages/NotFoundPage";
@@ -28,6 +29,7 @@ const App = () => {
           <NotFoundPage />
         </Route>
       </Switch>
+      <Footer/>
     </div>
   );
 };

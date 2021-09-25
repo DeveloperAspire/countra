@@ -139,11 +139,19 @@ form{
    .filter {
  width:80%;
 }
+.dropdown{
+ 
+  width:100%;
+}
   
 }
 @media (width: 320px) {
    .filter {
  width:90%;
+}
+.dropdown{
+ 
+  width:100%;
 }
   
 }

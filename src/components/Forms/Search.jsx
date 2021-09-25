@@ -8,7 +8,6 @@ import { updateLoading, updateCountries } from "../../store/country-slice";
 const Search = () => {
   const darkMode = useSelector((state) => state.countrySlice.darkMode);
   const [enteredValue, setEnteredValue] = useState("");
-  const [isValid, setIsValid] = useState(false);
   const dispatch = useDispatch();
   const history = useHistory();
 

@@ -126,7 +126,7 @@ form{
 }
 }
 
-@media (max-width: 310px) {
+@media (width: 375px) {
   .filter {
  width:70%;
 }

@@ -51,6 +51,7 @@ const Details = () => {
           currencies={selectedCountry.currencies}
           languages={selectedCountry.languages}
           flag={selectedCountry.flags[1]}
+          borders={selectedCountry.borders}
         />
       )}
     </div>

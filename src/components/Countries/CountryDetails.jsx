@@ -1,6 +1,7 @@
 import classes from "./CountryDetails.module.css";
 import BackButton from "../UI/BackButton";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 const CountryDetails = ({
   name,
@@ -12,13 +13,17 @@ const CountryDetails = ({
   flag,
   languages,
   domain,
-  currencies
+  currencies,
+  borders
 }) => {
+
+ 
  const darkMode = useSelector(state => state.countrySlice.darkMode)
       const allLanguages = languages.map(lang => lang.name)
-      console.log(allLanguages)
 
       const detailsClass = darkMode ? `${classes.details} ${classes.dark}` : `${classes.details}`
+
+      console.log(borders)
   return (
     <main className={classes.main}>
       <BackButton />
@@ -56,10 +61,18 @@ const CountryDetails = ({
                 <span>Currency</span>: {currencies[0].name}
               </p>
               <p>
-                <span>Languages</span>: {allLanguages.toString(' ')}
+                <span>Languages</span>: {allLanguages.toString(" ")}
               </p>
             </div>
           </div>
+          
+            <p className={classes.p}>
+              Borders:
+              {borders.map((bor) => (
+                <Link to={`/details/${bor}`}>{bor}</Link>
+              ))}
+            </p>
+          
         </div>
       </section>
     </main>

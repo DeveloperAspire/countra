@@ -135,6 +135,16 @@ form{
   width:100%;
 }
 }
+@media (width: 320px) {
+   .filter {
+ width:100%;
+}
+.dropdown{
+ 
+  width:100%;
+}
+  
+}
 
 @media (width:1024px) {
   .filter {

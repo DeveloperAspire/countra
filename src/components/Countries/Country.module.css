@@ -15,7 +15,9 @@
   display: block;
   text-decoration: none;
   color: hsl(200, 15%, 8%);
+  cursor: pointer;
 }
+
 .darklink {
   color: white;
 }

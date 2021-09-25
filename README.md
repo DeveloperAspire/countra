@@ -10,7 +10,7 @@ Countra is responsive on all devices from mobile to tablet and desktop.
 
 Countra is built with React, Redux-Toolkit for State Management, React-Router for Client style routing and also CSS for styling.
 
-You can check out the love site [here](https://countra.netlify.app/home)
+You can check out the love site [here](https://countra.netlify.app)
 
 #### Bonus: There is a beautiful 404 page incase you land on apage that doesn't exist in this application
 

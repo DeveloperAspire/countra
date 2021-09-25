@@ -126,9 +126,9 @@ form{
 }
 }
 
-@media (max-width: 360) {
+@media (min-width: 310px) {
   .filter {
- width:100%;
+ width:70%;
 }
 .dropdown{
  

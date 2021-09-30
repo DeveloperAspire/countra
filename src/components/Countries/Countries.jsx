@@ -42,7 +42,7 @@ const Countries = () => {
         <Country
           name={country.name}
           key={country.alpha2Code}
-          flag={country.flags[1]}
+          flag={country.flags.svg}
           capital={country.capital}
           region={country.continent}
           population={country.population}

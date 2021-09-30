@@ -44,7 +44,7 @@ const Countries = () => {
           key={country.alpha2Code}
           flag={country.flags.svg}
           capital={country.capital}
-          region={country.continent}
+          region={country.region}
           population={country.population}
           code={country.alpha2Code}
         />

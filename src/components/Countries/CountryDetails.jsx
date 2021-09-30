@@ -13,7 +13,7 @@ const CountryDetails = ({
   population,
   capital,
   region,
-  continent,
+  subregion,
   flag,
   languages,
   domain,
@@ -55,10 +55,10 @@ const CountryDetails = ({
                 <span>Population</span>: {formatedPopulation}
               </p>
               <p>
-                <span>Region</span>: {continent}
+                <span>Region</span>: {region}
               </p>
               <p>
-                <span>Sub region</span>: {region}
+                <span>Sub region</span>: {subregion}
               </p>
               <p>
                 <span>Captial</span>: {capital}

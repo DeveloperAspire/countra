@@ -45,8 +45,8 @@ const Details = () => {
           nativeName={selectedCountry.nativeName}
           population={selectedCountry.population}
           capital={selectedCountry.capital}
+          subregion={selectedCountry.subregion}
           region={selectedCountry.region}
-          continent={selectedCountry.continent}
           domain={selectedCountry.topLevelDomain}
           currencies={selectedCountry.currencies}
           languages={selectedCountry.languages}

@@ -18,23 +18,30 @@ const CountryDetails = ({
   languages,
   domain,
   currencies,
-  borders
+  borders,
 }) => {
-  const params = useParams()
-  const dispatch = useDispatch()
+  const params = useParams();
+  const dispatch = useDispatch();
 
-  useEffect(()=> {
-    console.log('hello')
-    dispatch(updateLoading(true))
-  },[params.countryCode, dispatch])
- 
- const darkMode = useSelector(state => state.countrySlice.darkMode)
-      const allLanguages = languages.map(lang => lang.name)
+  useEffect(() => {
+    console.log("hello");
+    dispatch(updateLoading(true));
+  }, [params.countryCode, dispatch]);
 
-      const detailsClass = darkMode ? `${classes.details} ${classes.dark}` : `${classes.details}`
-      const overFlow = borders.length > 4
-      const linkClass = overFlow ? `${classes.linkgrid}` : ''
-      const formatedPopulation = population.toLocaleString("en");
+  const darkMode = useSelector((state) => state.countrySlice.darkMode);
+  const allLanguages = languages.map((lang) => lang.name);
+
+  const detailsClass = darkMode
+    ? `${classes.details} ${classes.dark}`
+    : `${classes.details}`;
+
+  let overFlow;
+  if (borders) {
+    overFlow = borders.length > 4;
+  }
+
+  const linkClass = overFlow ? `${classes.linkgrid}` : "";
+  const formatedPopulation = population.toLocaleString("en");
 
   return (
     <main className={classes.main}>

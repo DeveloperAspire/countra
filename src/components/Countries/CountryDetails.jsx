@@ -77,14 +77,16 @@ const CountryDetails = ({
               </p>
             </div>
           </div>
-          
+          {borders && (
             <p className={classes.p}>
               Borders:
               {borders.map((bor) => (
-                <Link className={linkClass} key={bor} to={`/details/${bor}`}>{bor}</Link>
+                <Link className={linkClass} key={bor} to={`/details/${bor}`}>
+                  {bor}
+                </Link>
               ))}
             </p>
-          
+          )}
         </div>
       </section>
     </main>

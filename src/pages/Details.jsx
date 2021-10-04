@@ -50,7 +50,7 @@ const Details = () => {
           domain={selectedCountry.topLevelDomain}
           currencies={selectedCountry.currencies}
           languages={selectedCountry.languages}
-          flag={selectedCountry.flags.svg}
+          flag={selectedCountry.flag}
           borders={selectedCountry.borders}
         />
       )}

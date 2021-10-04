@@ -22,7 +22,7 @@
   color: white;
 }
 .container img {
-  width: 250px;
+  width: 100%;
   height: auto;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -47,8 +47,8 @@
   }
 }
 
-@media (width:1024px) {
- .container img {
+@media (width: 1024px) {
+  .container img {
     width: 100%;
   }
 }
